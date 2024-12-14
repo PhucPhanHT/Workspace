@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--
+    6.Thẻ <table> (chèn bảng)
+    Thẻ <table></table> dùng để tạo bảng trong HTML
+    Ý nghĩa các thẻ:
+    - <table></table>: Xác định một bảng
+    - <thead></thead>: Phần đầu của bảng
+    - <tbody><tbody>: Phần thân của bảng
+    - <tr></tr>(table row): Xác định một hàng của bảng
+    - <th></th>(table header): Xác định tiêu đề của bảng
+    - <td></td>(table data): Xác định dữ liệu ô của bảng
+    Thuộc tính:
+    - colspan: Tạo ô mở rộng trên nhiều cột
+    - rowspan: Tạo ô kéo dài trên nhiều hàng                                   
+    -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và Tên</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Văn A</td>
+                <td>0123456789</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Thị B</td>
+                <td>0987654321</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!--VD1-->
+    <style>
+        table,tr,th,td{
+            border: 1px solid #ddd;
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>level1</th>
+                <th>level2</th>
+                <th>level3</th>
+                <th>level4</th>
+                <th>level5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">System</td>
+                <td rowspan = "4">System Apps</td>
+                <td rowspan="3"> SystemEnv</td>
+                <td>App Test</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Memory</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td>SystemEnv2</td>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td rowspan = "2">System Memory</td>
+                <td rowspan = "2">Memeory Test</td>
+                <td>Memory Func</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>Apes Test</td>
+                <td>foo</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!--VD2-->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td rowspan = "11">TCB</td>
+                <td>Order no:</td>
+                <td colspan = 3>#ABC001</td>
+            </tr>
+            <tr>
+                <td>Order Date:</td>
+                <td colspan="3">23-Mar-2016</td>
+            </tr>
+            <tr>
+                <td colspan = 4>Customer</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td colspan="3">John Papas</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td colspan="3">Independence Day 5th str, 11511</td>
+            </tr>
+            <tr>
+                <td colspan = "4">Order Details</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>10.00$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>les Miserables</td>
+                <td>Book</td>
+                <td>12.00$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Game of Thrones - S01</td>
+                <td>DVD</td>
+                <td>50.00$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Samsung Galaxy</td>
+                <td>Mobile Phone</td>
+                <td>200.00$</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>272$</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- Thẻ <ul>,<ol>(Chèn danh sách)
+    Kiểu ul:
+    - Kiểu <ul></ul> (Unordered List - Không sắp xếp): Các Mục con của nó sẽ không được đánh số, mà chỉ được đánh dấu bằng hình tròn.
+    Cú Pháp:
+    <ul>
+        <li>Mục 1<li>
+        <li>Mục 2<li>
+        <li>Mục 3<li>
+    </ul>
+    Ý nghĩa của các thẻ:
+    - <ul></ul>: (unordered List): Danh sách hiển thị kiểu không được đánh số
+    - <li></li>: (List item): Một mục trong danh sách
+
+    Kiểu ol:
+    - Kiểu <ol></ol> (ordered List - Sắp Xếp): Các mục con của nó được sắp xếp theo thức tự bằng số hoặc chữ cái.
+    Cú Pháp:
+    <ol>
+        <li>Mục 1<li>
+        <li>Mục 2<li>
+        <li>Mục 3<li>
+    </ol>  
+   Ý nghĩa của các thẻ:
+    - <ol></ol>: (ordered List): Danh sách hiển thị kiểu được đánh số(mặc định hoặc chữ cái)
+    - <li></li>: (List item): Một mục trong danh sách
+    -->
+    <!-- <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <ol>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol> -->
+    <!-- Một số ví dụ về các attribul riêng của ol -->
+    <ol type="I">
+        <li>Background Skills
+            <ol type="A">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+            </ol>
+        </li>
+        <li>HTML
+            <ol type = "A">
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Tags</li>
+                <li>Lists
+                    <ol type="i">
+                        <li>Unordered</li>
+                        <li>Orederd</li>
+                        <li>Definition</li>
+                        <li>Nested</li>
+                    </ol>
+                </li>
+                <li>Links
+                    <ol type = "i">
+                        <li>Absolute</li>
+                        <li>Relative</li>
+                    </ol>
+                </li>
+                <li>Images</li>
+            </ol>
+        </li>
+        <li>CSS
+            <ol type="A">
+                <li>Anatomy</li>
+                <li>Basic Selectors
+                    <ol>
+                        <li>Element</li>
+                        <li>Class</li>
+                        <li>ID</li>
+                        <li>Group</li>
+                    </ol>
+                </li>
+                <li>The DOM</li>
+                <li>Advanced Selectors</li>
+                <li>Box Model</li>
+            </ol>
+        </li>
+        <li>Programming
+            <ol type="A">
+                <li>Python</li>
+                <li>Javascript</li>
+            </ol>
+        </li>
+        <li>Database
+            <ol type = "A">
+                <li>Flat File</li>
+                <li>Relational</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>

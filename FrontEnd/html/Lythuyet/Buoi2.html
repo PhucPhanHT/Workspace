@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buổi 2</h1>
+    <!-- 
+     1.Thẻ <a></a>(anchor: Mỏ neo) là thẻ khi click và thẻ đó sẽ chuyển hướng tới trang khác
+     Cú Pháp: <a href ="url"> Text</a>
+     href(hypertext Reference - Tài liệu tham khảo siêu văn bản): Thuộc tính xác định địa chỉ liên kết
+     target: Thuộc tính xác định nơi mà tài liệu được mở
+      - _seft: Mặc định. Mở tài liệu ở tab hiện tại
+      - _blank: Mở tài liệu ở tab mới
+     title: Thông tin bổ sung về một element(Khi chỉ chuột vào liên kết nó sẽ hiện)
+    -->
+    <p>Xem Tài Liệu <a href = "https://roadmap.sh/r/vnoi-roadmap">Tại đây</a></p>
+    <p>Xem Tài Liệu <a href = "https://roadmap.sh/r/vnoi-roadmap" target = "_self">Tại đây</a></p>
+    <p>Xem Tài Liệu <a href = "https://roadmap.sh/r/vnoi-roadmap" target = "_blank" title = "Vào đây để xem tài liệu">Tại đây</a></p>
+    <!-- 
+    2. Thẻ <img>(chèn ảnh)
+    - Thẻ <img> là thẻ dùng để nhúng ảnh vào trang web, thẻ img là thẻ trống, chỉ chứa thuộc tính và không có thẻ đóng
+    - Cú Pháp:<img src = "Duong_dan_hinh_anh.jpg" alt = "Mô tả hình ảnh">
+    - Thuộc tính: src (source - nguồn): Chèn đường dẫn hình ảnh
+    - alt(alternate - thay thế): Văn bản thay thế cho hình ảnh,hiển thị khi ảnh bị lỗi
+     -->
+    <img src = "AnhĐộLé_PC_update.png" alt = "AnhĐộLé_PC_update" width="1000" height="500">
+    <img src = "../anh2.jpg" alt = "ảnh 2" >
+    <img src = "./anh3.jpg" alt = "ảnh 3">
+    <!--Những ảnh trên là đường dẫn trực tiếp lấy từ file-->
+    <img src = "https://cdn-main.28tech.com.vn/media/anh-khoa-hoc/ca%CC%82%CC%81u%20tru%CC%81c%20du%CC%9B%CC%83%20lie%CC%A3%CC%82u%20va%CC%80%20gia%CC%89i%20thua%CC%A3%CC%82tpng.png" alt = "ảnh 28tech"> <!--Đây là đường dẫn gián tiếp lấy từ web-->
+    <!--Thẻ a kết hợp với thẻ img-->
+    <a href = "https://28tech.com.vn/cau-truc-du-lieu-va-giai-thuat" target="_blank" title="Nhấn vào đây để xem khóa DSA">
+        <img src = "https://cdn-main.28tech.com.vn/media/core/logo-28tech.svg" alt = "Khoa Học 28tech">
+    </a>
+    <!-- 
+    4.Thẻ <video> (chèn Video)
+    - Thẻ <video></video> là thẻ để nhúng video vào trang web. Trong thẻ <source> để chứa đường dẫn file video và kiểu video
+    - Cú Pháp: 
+        <video width = "320" height = "240" controls>
+        <source src = "Link-video.mp4" type = "video/mp4">
+        <video>
+    - Thuộc tính:
+        + width/ heght: Chiều rộng và chiều cao của video. Nếu không để width/ height thì web có thể bị nhấp nháy khi tải video
+        + controls: Thuộc tính điều khiển, như là bật, tạm dừng, âm lượng
+        + loop: Lặp lại video
+        + src: Đưòng dẫn video
+        + type: Kiểu video(mp4,ogg,webm)
+        + autoplay: Tự động phát video
+        + muted: tắt tiếng khi mới hoạt động
+    -->
+    <!-- <video width = "320" height = "240" controls loop autoplay muted>
+        <source src = "douyin-7362440285185396031-dy-video-godownloader.com.mp4" type = "video/mp4">
+    <video> -->
+     <!--
+        5. Thẻ <audio> (chèn audio)
+        - Thẻ <audio></audio> là thẻ dùng để nhúng audio vào trang web. Trong thẻ audio có thẻ <source> để chứa đường dẫn file audio và kiểu audio
+        Cú Pháp:
+        <audio controls>
+            <source src = "link-audio.mp3" type= "audio/mpeg">
+        </audio>
+        - Thuộc tính:
+        + controls: Thuộc tính điều khiển, như là bật, tạm dừng, âm lượng
+        + loop: Lặp lại video
+        + src: Đưòng dẫn video
+        + type: Kiểu video(mp4,ogg,webm)
+        + autoplay: Tự động phát video
+        + muted: tắt tiếng khi mới hoạt động
+     -->
+    <audio controls loop autoplay muted>
+        <source src = "audio1.wav" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>
